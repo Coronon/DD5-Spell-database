@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<h1>Results</h1>
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Level</th>
+        <th scope="col">School</th>
+        <th scope="col">Verbal</th>
+        <th scope="col">Somatic</th>
+        <th scope="col">Material</th>
+        <th scope="col">Ingredients</th>
+        <th scope="col">Castingtime</th>
+        <th scope="col">Range</th>
+        <th scope="col">Duration</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for sql in sqlq: %}
+
+        {% include 'includes/_qres.html' %}
+     
+    {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
+  
+ 

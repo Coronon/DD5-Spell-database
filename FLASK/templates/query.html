@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block title %}Query{% endblock %}
+
+{% block body %}
+  <h1>Query</h1>
+  {% from "includes/_formhelpers.html" import render_field %}
+  <form method="POST" action="">
+    <div class="form-group">
+        {{render_field(form.Class, class_="form-control")}}
+    </div>
+    <div class="form-group">
+        {{render_field(form.Spellname, class_="form-control")}}
+    </div>
+    <div class="form-group">
+        {{render_field(form.Spelllevel, class_="form-control")}}
+    </div>
+    <div class="form-group">
+        {{render_field(form.selectspellschool, class_="form-control")}}
+    </div>
+    <div class="form-group">
+        {{render_field(form.selectmultiplevsm, class_="form-control")}}
+    </div>
+    <p><input type="submit" class="btn btn-primary" value="Submit"></p>
+  </form>
+{% endblock %}

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Source+Sans+Pro');
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.9em;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+}
+
+section {
+    background-color: aquamarine;
+    border: 2px solid #333333;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 5px;
+    width: 50%;
+}
